@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/search.css" />
+
+    <title>search waste item</title>
+  </head>
+
+  <style>
+    #myInput {
+      background-position: 10px 12px;
+      /* Position the search icon */
+      background-repeat: no-repeat;
+      /* Do not repeat the icon image */
+      width: 100%;
+      /* Full-width */
+      font-size: 16px;
+      /* Increase font-size */
+      padding: 12px 20px 12px 40px;
+      /* Add some padding */
+      border: 1px solid #ddd;
+      /* Add a grey border */
+      margin-bottom: 12px;
+      /* Add some space below the input */
+    }
+
+    #myTable {
+      position: relative;
+      border-collapse: collapse;
+      /* Collapse borders */
+      width: 100%;
+      /* Full-width */
+      border: 1px solid #ddd;
+      /* Add a grey border */
+      font-size: 18px;
+      /* Increase font-size */
+      z-index: 3;
+      color: rgb(238, 255, 3);
+    }
+
+    #myTable th {
+      color: darkblue;
+    }
+
+    #myTable th,
+    #myTable td {
+      text-align: left;
+      /* Left-align text */
+      padding: 12px;
+      /* Add padding */
+    }
+
+    #myTable tr {
+      /* Add a bottom border to all table rows */
+      border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header,
+    #myTable tr:hover {
+      /* Add a grey background color to the table header and on hover */
+      background-color: #f1f1f1;
+    }
+  </style>
+
+  <body>
+    <nav class="navbar2">
+      <div class="image"><img src="images/logo.jpg" alt="" /></div>
+      <a href="home.html">Home</a>
+      <a href="search2.html">Search</a>
+      <a href="recycle.html">Recycle</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+    <div class="main">
+      <div class="search-city">
+        <h1 class="city"><span>SEARCH</span> FOR WASTE ITEMS</h1>
+      </div>
+  
+      <!-- Search-Box -->
+     <section>
+      <div class="search-container">
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Waste material"
+        />
+        <button type="submit"><i class="bx bx-search-alt-2"></i></button>
+      </div>
+  
+      <!-- Table-Data -->
+      <section id="table-data">
+        <table id="myTable">
+          <tr class="header">
+            <th style="width: 27%;">WASTE MATERIALS</th>
+            <th style="width: 60%;">RECYCLING METHODS</th>
+          </tr>
+          
+              <tr>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>Plastic Bottels </td>
+                  <td>Vertical Garden</td>
+              </tr>
+              <tr>
+                  <td>Plastic Bottels </td>
+                  <td>Hanging Chandelier</td>
+              </tr>
+              <tr>
+                  <td>Plastic Bottels </td>
+                  <td>Parking Canopy</td>
+              </tr>
+              <tr>
+                  <td>Plastic Bottels </td>
+                  <td>Cute Planters</td>
+              </tr>
+              <tr>
+                  <td>Plastic Bottels </td>
+                  <td>Bird Feeder</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Bottle planters </td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Pet Feeder</td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Seedlings plant protector </td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Table Centerpiece </td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Tiki Torch </td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Desk Organizer</td>
+              </tr>
+              <tr>
+                  <td>Glass bottels</td>
+                  <td>Diy Terrarium </td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>Magzine </td>
+                  <td>Picture Frames </td>
+              </tr>
+              <tr>
+                  <td>Magzine </td>
+                  <td>Decorative Bowls </td>
+              </tr>
+              <tr>
+                  <td>Magzine </td>
+                  <td>Paper flower </td>
+              </tr>
+              <tr>
+                  <td>Magzine </td>
+                  <td>Goody bags </td>
+              </tr>
+              <tr>
+                  <td>Magzine </td>
+                  <td>Storage box</td>
+              </tr>
+          
+        </table>
+      </section>
+  
+      <!-- Background theme -->
+      <div class="ripple-background">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circle xlarge shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle mediun shade4"></div>
+        <div class="circle small shade5"></div>
+      </div>
+     </section>
+  
+    
+    </div>
+      <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
